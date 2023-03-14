@@ -24,7 +24,9 @@ public class Human {
     public String getFirstName() {
         return firstName;
     }
-
+    public String getFullName() {
+        return lastName + " " + firstName;
+    }
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
@@ -76,7 +78,7 @@ public class Human {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", city='" + city + '\'' +
-                ", gender='" + gender + '\'' +
+                ", gender=" + gender +
                 ", age=" + age +
                 ", salary=" + salary +
                 '}';
